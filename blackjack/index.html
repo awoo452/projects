@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        
+        <title>BlackJack</title>
+        
+        
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="blackjack.css">
+
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
+
+    </head>
+
+
+    <body>
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="table">
+                <div class="dealerCards">
+                    <div id="dealerCard1" class="dealerCard1 invisible">
+                    </div>
+                    <div id="dealerCard2" class="dealerCard2 invisible">
+                    </div>
+                    <div id="dealerCard3" class="dealerCard3 invisible">
+                    </div>
+                    <div id="dealerCard4" class="dealerCard4 invisible">
+                    </div>
+                    <div id="dealerCard5" class="dealerCard5 invisible">
+                    </div>
+                    <div id="dealerCard6" class="dealerCard6 invisible">
+                    </div>
+                    <div id="dealerCard7" class="dealerCard7 invisible">
+                    </div>
+                    <div id="dealerCard8" class="dealerCard8 invisible">
+                    </div>
+                    <div id="dealerCard9" class="dealerCard9 invisible">
+                    </div>
+                    <div id="dealerCard10" class="dealerCard10 invisible">
+                    </div>
+                    <div id="dealerCard11" class="dealerCard11 invisible">
+                    </div>
+                    <div id="dealerCard12" class="dealerCard12 invisible">
+                    </div>
+                    <div id="dealerCard13" class="dealerCard13 invisible">
+                    </div>
+                </div>
+                <h1 class="text-white">BlackJack</h1>
+                <div class="playerCards">
+                    <div id="playerCard1" class="playerCard1 invisible">
+                    </div>
+                    <div id ="playerCard2" class="playerCard2 invisible">
+                    </div>
+                    <div id="playerCard3" class="playerCard3 invisible">
+                    </div>
+                    <div id="playerCard4" class="playerCard4 invisible">
+                    </div>
+                    <div id="playerCard5" class="playerCard5 invisible">
+                    </div>
+                    <div id="playerCard6" class="playerCard6 invisible">
+                    </div>
+                    <div id="playerCard7" class="playerCard7 invisible">
+                    </div>
+                    <div id="playerCard8" class="playerCard8 invisible">
+                    </div>
+                    <div id="playerCard9" class="playerCard9 invisible">
+                    </div>
+                    <div id="playerCard10" class="playerCard10 invisible">
+                    </div>
+                    <div id="playerCard11" class="playerCard11 invisible">
+                    </div>
+                    <div id="playerCard12" class="playerCard12 invisible">
+                    </div>
+                    <div id="playerCard13" class="playerCard13 invisible">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scoreBox text-center text-white">
+            <h5>Dealer Score:</h5>
+            <h5 id="dealerScore">
+                0
+            </h5>
+            
+            <h5>Player Score:</h5>
+            <h5 id="playerScore">
+                0
+            </h5>
+
+            <h5>Final Score:</h5>
+            <h5 id="finalScore">
+                N/A
+            </h5>
+        </div>
+
+        <div class="buttonBox">
+
+            <button onclick="deal () ">Deal</button>
+            <button onclick="hit () ">Hit</button>
+            <button onclick="stand () ">Stand</button>
+            <button onclick="reset ()" >Reset</button>
+
+        </div>
+        <!--app.js-->
+        <script src="blackjack.js" charset="utf-8"></script>
+        <!--JQuery-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!--Popper-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!--Bootstrap JS-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+    </body>
+
+</html>
