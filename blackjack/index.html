@@ -9,8 +9,8 @@
         
         
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="blackjack.css">
+        
+        <link rel="stylesheet" href="../blackjack/css/style.css">
 
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
 
@@ -18,8 +18,11 @@
 
 
     <body>
-        <div class="container-fluid d-flex justify-content-center">
-            <div class="table">
+        <div id="blackjackTable">
+
+            <h5>Dealer Score: <span id="dealerScore">0</span></h5>
+
+            <div class="cardSquare">
                 <div class="dealerCards">
                     <div id="dealerCard1" class="dealerCard1 invisible">
                     </div>
@@ -48,7 +51,19 @@
                     <div id="dealerCard13" class="dealerCard13 invisible">
                     </div>
                 </div>
-                <h1 class="text-white">BlackJack</h1>
+            </div>
+
+            <div id="tableCenter">
+                <img src="./img/logo.png">
+                <div id="rules">
+
+                    <h6>DEALER STAYS ON 17</h6>
+                    <H6>INSURANCE PAYS 2 TO 1</H6>
+
+                </div>
+            </div>
+
+            <div class="cardSquare">
                 <div class="playerCards">
                     <div id="playerCard1" class="playerCard1 invisible">
                     </div>
@@ -78,26 +93,18 @@
                     </div>
                 </div>
             </div>
+
+            <h5>Your Score: <span id="playerScore"> 0</span></h5>
+
         </div>
 
-        <div class="scoreBox text-center text-white">
-            <h5>Dealer Score:</h5>
-            <h5 id="dealerScore">
-                0
-            </h5>
-            
-            <h5>Player Score:</h5>
-            <h5 id="playerScore">
-                0
-            </h5>
+        <div id="winner">
 
-            <h5>Final Score:</h5>
-            <h5 id="finalScore">
-                N/A
-            </h5>
+            <h5>Final Score: <span id="finalScore"></span></h5>
+
         </div>
 
-        <div class="buttonBox">
+        <div id="buttonContainer">
 
             <button onclick="deal () ">Deal</button>
             <button onclick="hit () ">Hit</button>
@@ -105,14 +112,9 @@
             <button onclick="reset ()" >Reset</button>
 
         </div>
+
         <!--app.js-->
         <script src="blackjack.js" charset="utf-8"></script>
-        <!--JQuery-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <!--Popper-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <!--Bootstrap JS-->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         
     </body>
 
