@@ -9,51 +9,44 @@
      user-scalable=0' >
 
     <title>Whackamolé</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="whackamole.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
 </head>
 
+<body>
 
-<body class='text-center pl-4 pr-4'>
-    
-    <div class="row d-flex justify-content-center mt-1 mb-1">
-        <div class="textbox p-4">
-            <h4>WhackAMolé</h4>
-    
-            <h6 class='pl-4 pr-4'>MAKE YOUR OWN DELICIOUS DIGITAL GUACAMOLE...?</h6>
-            
-            <div class="statbox mx-auto">
-                <h6 class='text-white'>Score</h6>
-                <h5 class='text-white' id="score">0</h6>
-    
-                <h6 class="text-white mt-2">Time Remaining</h5>
-                <h5 class="text-white mb-2" id="time-left">0</h5>
+    <div id="top">
+        <div id="avocadoStats">
+            <div>
+                <h4>WhackAMole</h4>
+                <h6>MAKE YOUR OWN DELICIOUS DIGITAL GUACAMOLE...?</h6>
             </div>
-            
-            <button class="start mt-2 mb-2">
-                <h5 class="d-block mx-auto my-auto p-2 text-white">START</h5>
+            <div id="pit">
+                <h6>Score: <span id='score'>0</span></h6>
+                <h6>Time Remaining: <span id='time-left'>0</span></h6>
+            </div>
+            <button class="start">
+                <h5>START</h5>
             </button>
+        </div>
+
+        <div class="bowl" id="bowlometer">
         </div>
     </div>
 
-    <div class="row">
-
-        <div class="grid col mr-2" id="hammer">
-            <div class="square" id ="1"></div>
-            <div class="square" id ="2"></div>
-            <div class="square" id ="3"></div>
-            <div class="square" id ="4"></div>
-            <div class="square" id ="5"></div>
-            <div class="square" id ="6"></div>
-            <div class="square" id ="7"></div>
-            <div class="square" id ="8"></div>
-            <div class="square" id ="9"></div>
-        </div>
-        <div class="bowl col ml-2">
-            <div class="m-2" id="bowlometer"></div>
-        </div>
+    <div class="grid" id="hammer">
+        <div class="square" id ="1"></div>
+        <div class="square" id ="2"></div>
+        <div class="square" id ="3"></div>
+        <div class="square" id ="4"></div>
+        <div class="square" id ="5"></div>
+        <div class="square" id ="6"></div>
+        <div class="square" id ="7"></div>
+        <div class="square" id ="8"></div>
+        <div class="square" id ="9"></div>
     </div>
     
     <script src="whackamole.js" charset="utf-8"></script>
@@ -64,6 +57,6 @@
     <!--Bootstrap JS-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-</body>
+    </body>
 
 </html>

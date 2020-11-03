@@ -29,7 +29,7 @@ h1 h2, h3, h4, h5, h6 {
     padding: 5px;
     height: 49vh;
     border-radius: 5px;
-    background-image: url("img/woodgrain.jpg");
+    background-image: url($board-background-image);
 }
 
 .square {
@@ -127,13 +127,6 @@ h1 h2, h3, h4, h5, h6 {
     border: 1px solid black;
 }
 
-#bowlometer {
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    margin-top: 1vh;
-    height: 49vh;
-}
 
 #hammer {
     cursor: url('img/hammer.cur'),auto;
